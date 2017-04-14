@@ -19,6 +19,13 @@
     "activationEvents": [
         "*"
     ],
+    "keywords": [
+        "vscode",
+        "code",
+        "font",
+        "bitmap",
+        "anti-aliasing"
+    ],
     "main": "./out/src/extension",
     "contributes": {
         "commands": [{
