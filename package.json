@@ -2,10 +2,14 @@
     "name": "text-clarity",
     "displayName": "Text Clarity",
     "description": "Disables text anti-aliasing in the visual studio code editor (for usage with bitmap-like fonts)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "fbosch",
     "icon": "images/font-bitmap.png",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fBosch/vscode-text-clarity"
+    },
     "engines": {
         "vscode": "^1.10.0"
     },

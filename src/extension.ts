@@ -13,7 +13,6 @@ function install(context) {
     try {
         let html = fs.readFileSync(htmlFile, 'utf-8')
         const isNotDisabled = "!localStorage['storage://global/extensions/disabled'].includes('fbosch.text-clarity')"
-        const isEnabled = "!!JSON.parse(localStorage['storage://global/fbosch.text-clarity']).enabled"
         if (html.indexOf(identifier) === -1) {
             html = html.replace('</body>', `${identifier}
             <style type="text/css">
@@ -22,14 +21,13 @@ function install(context) {
                     }
                 </style>
                 <script type="text/javascript">
-                    if (${isNotDisabled} && ${isEnabled}) {
+                    if (${isNotDisabled}) {
                         document.querySelector('body').classList.add('text-clarity-enabled')
                     }
                 </script>
                 ${identifier}
             </body>`)
             fs.writeFile(htmlFile, html, 'utf-8', () => {
-                context.globalState.update('enabled', true)
                 vscode.window.showInformationMessage('Text Clarity has been successfully installed', { title: "Restart" })
                     .then(function (msg) {
                         vscode.commands.executeCommand("workbench.action.reloadWindow");
@@ -57,9 +55,7 @@ function uninstall() {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-
     install(context)
-
     vscode.commands.registerCommand('extension.installTextClarity', () => install(context))
     vscode.commands.registerCommand('extension.uninstallTextClarity', uninstall)
 }
