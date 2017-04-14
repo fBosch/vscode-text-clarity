@@ -1,7 +1,7 @@
 {
-    "name": "text-clarity",
-    "displayName": "vscode-text-clarity",
-    "description": "Disable text anti-aliasing in the editor (For usage with bitmap-like fonts)",
+    "name": "vscode-text-clarity",
+    "displayName": "Text Clarity",
+    "description": "Disables text anti-aliasing in the visual studio code editor (for usage with bitmap-like fonts)",
     "version": "0.0.1",
     "publisher": "fbosch",
     "engines": {
