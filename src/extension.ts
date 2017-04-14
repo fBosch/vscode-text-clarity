@@ -30,7 +30,7 @@ function install(context) {
             </body>`)
             fs.writeFile(htmlFile, html, 'utf-8', () => {
                 context.globalState.update('enabled', true)
-                vscode.window.showInformationMessage('Text Clarity has been successfully installed', { title: "Restart Visual Studio" })
+                vscode.window.showInformationMessage('Text Clarity has been successfully installed', { title: "Restart" })
                     .then(function (msg) {
                         vscode.commands.executeCommand("workbench.action.reloadWindow");
                     })
