@@ -1,9 +1,10 @@
 {
-    "name": "vscode-text-clarity",
+    "name": "text-clarity",
     "displayName": "Text Clarity",
     "description": "Disables text anti-aliasing in the visual studio code editor (for usage with bitmap-like fonts)",
     "version": "0.0.1",
     "publisher": "fbosch",
+    "icon": "font-bitmap.png",
     "engines": {
         "vscode": "^1.10.0"
     },
@@ -14,7 +15,17 @@
         "*"
     ],
     "main": "./out/src/extension",
-    "contributes": {},
+    "contributes": {
+        "commands": [{
+                "command": "extension.uninstallTextClarity",
+                "title": "Text Clarity: Uninstall"
+            },
+            {
+                "command": "extension.installTextClarity",
+                "title": "Text Clarity: Install"
+            }
+        ]
+    },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./",
