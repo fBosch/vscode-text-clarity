@@ -1,3 +1,5 @@
+> ### **THIS EXTENSION DOESN'T WORK WITH THE MOST RECENT VERSION OF VSCODE**
+
 # Text Clarity 
 > Note: If visual studio code notifies you that it is corrupted, simply click "Don't show again"
 
