@@ -1,6 +1,7 @@
-> ### **THIS EXTENSION DOESN'T WORK WITH THE MOST RECENT VERSION OF VSCODE**
 
-# Text Clarity 
+# [DISABLING ANTIALISING IS NOW PARTIALLY SUPPORTED NATIVELY](https://code.visualstudio.com/updates/v1_15#_font-aliasing-macos-only)
+
+# Text Clarity
 > Note: If visual studio code notifies you that it is corrupted, simply click "Don't show again"
 
 ![screenshot](https://github.com/fBosch/vscode-text-clarity/raw/master/images/screenshot.png)
